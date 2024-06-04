@@ -476,12 +476,6 @@ a.hoverline:hover {
   padding-bottom: 20px;
 }
 
-#skills .col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #skills .col img.responsive-img {
   margin: 0 auto;
   max-height: 100px;
