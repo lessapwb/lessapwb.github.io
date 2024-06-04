@@ -686,11 +686,12 @@ small {
   }
 }
 
-.img-container {
-  margin: 0 auto; /* Centers the image container in the column */
+.tech-logo {
   display: block;
+  margin: 0 auto;
 }
 
 .tech-name {
-  margin-top: 10px; /* Adds space between the image and the text */
+  text-align: center;
+  margin-top: 10px; /* Ajuste conforme necessário */
 }
