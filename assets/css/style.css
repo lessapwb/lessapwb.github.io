@@ -694,4 +694,6 @@ small {
 .tech-name {
   text-align: center;
   margin-top: 10px; /* Ajuste conforme necessário */
+  display: block;
 }
+
