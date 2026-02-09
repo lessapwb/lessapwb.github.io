@@ -336,7 +336,10 @@ body {
 }
 
 .lang-flag {
-    font-size: 1.25rem;
+    width: 20px;
+    height: 15px;
+    object-fit: cover;
+    border-radius: 2px;
 }
 
 .lang-code {
@@ -1525,6 +1528,13 @@ a.xplore-card * {
 .contact-social {
     display: flex;
     gap: 16px;
+}
+
+.social-link,
+.social-link:hover,
+.social-link:focus,
+.social-link:visited {
+    text-decoration: none !important;
 }
 
 .social-link {

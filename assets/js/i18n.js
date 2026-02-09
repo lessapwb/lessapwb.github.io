@@ -150,8 +150,8 @@ class I18n {
     updateToggleDisplay() {
         if (this.langFlag && this.langCode) {
             const flags = {
-                'pt': '🇧🇷',
-                'en': '🇺🇸'
+                'pt': 'https://flagcdn.com/w20/br.png',
+                'en': 'https://flagcdn.com/w20/us.png'
             };
             
             const codes = {
@@ -159,7 +159,8 @@ class I18n {
                 'en': 'EN'
             };
             
-            this.langFlag.textContent = flags[this.currentLang] || flags.pt;
+            this.langFlag.src = flags[this.currentLang] || flags.pt;
+            this.langFlag.alt = this.currentLang.toUpperCase();
             this.langCode.textContent = codes[this.currentLang] || codes.pt;
         }
     }
