@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Patrick Lessa - Senior Data Analyst | Power Platform • Python • SQL | Portfolio">
+    <meta name="keywords" content="Data Analyst, Power BI, Python, SQL, Business Intelligence, Data Science">
+    <meta name="author" content="Patrick Lessa">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Patrick Lessa - Senior Data Analyst">
+    <meta property="og:description" content="Transforming raw data into C-level decisions for businesses and governments.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lessapwb.github.io">
+    
+    <title>Patrick Lessa | Senior Data Analyst</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <span class="loader-text">PL</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">PL</span>
+                <span class="logo-dot"></span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-i18n-key="nav-home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-i18n-key="nav-about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-i18n-key="nav-skills">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link" data-i18n-key="nav-experience">Experiência</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link" data-i18n-key="nav-education">Formação</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link" data-i18n-key="nav-certifications">Certificações</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-i18n-key="nav-contact">Contato</a>
+                </li>
+            </ul>
+            
+            <div class="nav-actions">
+                <!-- Language Toggle -->
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle Language">
+                    <span class="lang-flag" id="langFlag">🇧🇷</span>
+                    <span class="lang-code" id="langCode">PT</span>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <div class="hero-image-placeholder" id="profileImage">
+                        <i class="fas fa-user"></i>
+                        <span data-i18n-key="hero-add-photo">Adicionar Foto</span>
+                    </div>
+                    <!-- Replace with: <img src="assets/images/profile.jpg" alt="Patrick Lessa" class="hero-image"> -->
+                </div>
+                <div class="hero-image-glow"></div>
+            </div>
+            
+            <div class="hero-text">
+                <p class="hero-greeting" data-i18n-key="hero-greeting">Olá, eu sou</p>
+                <h1 class="hero-title">Patrick Lessa</h1>
+                <div class="hero-subtitle-wrapper">
+                    <span class="hero-subtitle" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description" data-i18n-key="hero-description">
+                    Mais de 5 anos transformando dados brutos em decisões de nível C para empresas e governos. 
+                    Especialista em Power BI, Python e SQL.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label" data-i18n-key="stat-years">Anos de Experiência</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label" data-i18n-key="stat-dashboards">Dashboards Entregues</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="85">0</span>
+                        <span class="stat-percent">%</span>
+                        <span class="stat-label" data-i18n-key="stat-efficiency">Ganho de Eficiência</span>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span data-i18n-key="hero-cta-contact">Entre em Contato</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <span data-i18n-key="hero-cta-more">Saiba Mais</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <span class="scroll-text" data-i18n-key="hero-scroll">Role para explorar</span>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Social Links Fixed -->
+        <div class="social-fixed">
+            <a href="https://github.com/lessapwb" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/lessapwb/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:patrickwbarbosa@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5548992115623" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <div class="social-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                <span data-i18n-key="about-title">Sobre Mim</span>
+                <span class="title-line"></span>
+            </h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n-key="about-p1">
+                        Sou um <strong>Analista de Dados Sênior</strong> apaixonado por transformar dados complexos em insights acionáveis. 
+                        Com mais de 5 anos de experiência, tenho ajudado empresas e órgãos governamentais a tomar decisões estratégicas 
+                        baseadas em dados.
+                    </p>
+                    <p data-i18n-key="about-p2">
+                        Atualmente, estou concluindo meu <strong>Doutorado em Administração</strong> na UFSC, com ênfase em Marketing 
+                        Data-Driven e segmentação de mercado. Também sou fundador da <strong>Xplore Dados</strong>, uma empresa 
+                        voltada à inteligência de dados e soluções de BI.
+                    </p>
+                    <p data-i18n-key="about-p3">
+                        Minhas principais conquistas incluem a redução de 85% no tempo de preparação de dados, 
+                        desenvolvimento de mais de 100 painéis de BI e criação de soluções que impactaram decisões 
+                        estratégicas em nível global.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <span class="highlight-value">85%</span>
+                                <span class="highlight-label" data-i18n-key="about-highlight-1">Redução de tempo</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-database"></i>
+                            <div>
+                                <span class="highlight-value">14+</span>
+                                <span class="highlight-label" data-i18n-key="about-highlight-2">Fontes de dados</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <span class="highlight-value" data-i18n-key="about-highlight-value-3">Global</span>
+                                <span class="highlight-label" data-i18n-key="about-highlight-3">Impacto</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="about-card">
+                        <div class="card-header">
+                            <div class="card-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="card-title">patrick_lessa.py</span>
+                        </div>
+                        <div class="card-content">
+                            <pre><code><span class="code-keyword">class</span> <span class="code-class">DataAnalyst</span>:
+    <span class="code-keyword">def</span> <span class="code-function">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-string">"Patrick Lessa"</span>
+        <span class="code-param">self</span>.role = <span class="code-string">"Senior Data Analyst"</span>
+        <span class="code-param">self</span>.location = <span class="code-string">"Florianópolis, BR"</span>
+        <span class="code-param">self</span>.languages = [<span class="code-string">"pt"</span>, <span class="code-string">"en"</span>, <span class="code-string">"es"</span>]
+        
+    <span class="code-keyword">def</span> <span class="code-function">get_skills</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> {
+            <span class="code-string">"bi"</span>: [<span class="code-string">"Power BI"</span>, <span class="code-string">"Tableau"</span>, <span class="code-string">"Looker"</span>],
+            <span class="code-string">"code"</span>: [<span class="code-string">"Python"</span>, <span class="code-string">"R"</span>, <span class="code-string">"SQL"</span>],
+            <span class="code-string">"cloud"</span>: [<span class="code-string">"Azure"</span>, <span class="code-string">"Power Platform"</span>]
+        }</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                <span data-i18n-key="skills-title">Habilidades & Ferramentas</span>
+                <span class="title-line"></span>
+            </h2>
+            
+            <div class="skills-grid">
+                <!-- BI & Visualization -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3 data-i18n-key="skills-bi">BI & Visualização</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Power BI">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <span class="skill-name">Power BI</span>
+                            <div class="skill-tags">
+                                <span>DAX</span>
+                                <span>Power Query</span>
+                                <span>Data Modeling</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Tableau">
+                            <div class="skill-icon">
+                                <i class="fas fa-table"></i>
+                            </div>
+                            <span class="skill-name">Tableau</span>
+                        </div>
+                        <div class="skill-item" data-skill="Looker">
+                            <div class="skill-icon">
+                                <i class="fas fa-search-dollar"></i>
+                            </div>
+                            <span class="skill-name">Looker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Programming -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3 data-i18n-key="skills-programming">Programação</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Python">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span class="skill-name">Python</span>
+                            <div class="skill-tags">
+                                <span>Pandas</span>
+                                <span>NumPy</span>
+                                <span>Scikit-learn</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="R">
+                            <div class="skill-icon">
+                                <i class="fab fa-r-project"></i>
+                            </div>
+                            <span class="skill-name">R</span>
+                        </div>
+                        <div class="skill-item" data-skill="SQL">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="skill-name">SQL</span>
+                        </div>
+                        <div class="skill-item" data-skill="HTML">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span class="skill-name">HTML/CSS</span>
+                        </div>
+                        <div class="skill-item" data-skill="Git">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span class="skill-name">Git</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cloud & Automation -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3 data-i18n-key="skills-cloud">Cloud & Automação</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Power Automate">
+                            <div class="skill-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <span class="skill-name">Power Automate</span>
+                        </div>
+                        <div class="skill-item" data-skill="Power Apps">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <span class="skill-name">Power Apps</span>
+                        </div>
+                        <div class="skill-item" data-skill="Azure">
+                            <div class="skill-icon">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            <span class="skill-name">Azure Functions</span>
+                        </div>
+                        <div class="skill-item" data-skill="Supabase">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <span class="skill-name">Supabase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Statistics & ML -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3 data-i18n-key="skills-ml">Estatística & ML</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="EDA">
+                            <div class="skill-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <span class="skill-name">EDA</span>
+                        </div>
+                        <div class="skill-item" data-skill="Regression">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <span class="skill-name" data-i18n-key="skill-regression">Regressão</span>
+                        </div>
+                        <div class="skill-item" data-skill="CFA/SEM">
+                            <div class="skill-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <span class="skill-name">CFA/SEM</span>
+                        </div>
+                        <div class="skill-item" data-skill="Supervised ML">
+                            <div class="skill-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <span class="skill-name" data-i18n-key="skill-supervised">Modelos Supervisionados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Soft Skills -->
+            <div class="soft-skills">
+                <h3 class="soft-skills-title" data-i18n-key="skills-soft-title">Soft Skills</h3>
+                <div class="soft-skills-list">
+                    <span class="soft-skill" data-i18n-key="soft-interpersonal">Relação Interpessoal</span>
+                    <span class="soft-skill" data-i18n-key="soft-proactive">Proatividade</span>
+                    <span class="soft-skill" data-i18n-key="soft-teamwork">Trabalho em Equipe</span>
+                    <span class="soft-skill" data-i18n-key="soft-autodidact">Autodidata</span>
+                    <span class="soft-skill" data-i18n-key="soft-analytical">Pensamento Analítico</span>
+                    <span class="soft-skill" data-i18n-key="soft-agile">Metodologias Ágeis</span>
+                    <span class="soft-skill" data-i18n-key="soft-communication">Comunicação Clara</span>
+                    <span class="soft-skill" data-i18n-key="soft-time">Gestão de Tempo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                <span data-i18n-key="experience-title">Experiência Profissional</span>
+                <span class="title-line"></span>
+            </h2>
+            
+            <div class="timeline">
+                <!-- Mouts TI -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-info">
+                                <h3 class="job-title" data-i18n-key="exp-mouts-title">Desenvolvedor Power BI Sênior</h3>
+                                <span class="company">Mouts TI</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="date" data-i18n-key="exp-mouts-date">Jul 2024 – Atual</span>
+                                <span class="location">Florianópolis, SC (Remoto)</span>
+                            </div>
+                        </div>
+                        <ul class="job-achievements">
+                            <li data-i18n-key="exp-mouts-1">
+                                <span class="achievement-metric">85%</span>
+                                Automatizei a ingestão de 14 fontes de dados (SharePoint e SQL), reduzindo o tempo de preparação manual de 6 horas para 45 minutos.
+                            </li>
+                            <li data-i18n-key="exp-mouts-2">
+                                <span class="achievement-metric">30 dias</span>
+                                Criei dashboards executivos que expuseram riscos críticos na operação LATAM, impulsionando decisões estratégicas da diretoria.
+                            </li>
+                            <li data-i18n-key="exp-mouts-3">
+                                <span class="achievement-metric">3 apps</span>
+                                Entreguei soluções em Power Apps com automação via Power Automate, eliminando erros de entrada manual de dados.
+                            </li>
+                        </ul>
+                        <div class="job-tags">
+                            <span>Power BI</span>
+                            <span>Power Apps</span>
+                            <span>Power Automate</span>
+                            <span>SQL</span>
+                            <span>SharePoint</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TD Business -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-info">
+                                <h3 class="job-title" data-i18n-key="exp-td-title">Analista de Dados e Gestor de Projetos</h3>
+                                <span class="company">TD Business</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="date" data-i18n-key="exp-td-date">Abr 2023 – Jul 2024</span>
+                                <span class="location">Florianópolis, SC (Remoto)</span>
+                            </div>
+                        </div>
+                        <ul class="job-achievements">
+                            <li data-i18n-key="exp-td-1">
+                                <span class="achievement-metric">MEC</span>
+                                Liderança no desenvolvimento de centros de inteligência para órgãos públicos estratégicos, incluindo o Ministério da Educação.
+                            </li>
+                            <li data-i18n-key="exp-td-2">
+                                <span class="achievement-metric">100+</span>
+                                Entrega de mais de 100 painéis de BI para a Fundação Stemmer (FEESC) em múltiplas áreas institucionais.
+                            </li>
+                            <li data-i18n-key="exp-td-3">
+                                <span class="achievement-metric">AEB</span>
+                                Estruturação estratégica de dados para a Agência Espacial Brasileira.
+                            </li>
+                            <li data-i18n-key="exp-td-4">
+                                Criação do Observatório Sebrae Startups, com foco em análise de ecossistemas de inovação.
+                            </li>
+                        </ul>
+                        <div class="job-tags">
+                            <span>Power BI</span>
+                            <span>Project Management</span>
+                            <span>Data Strategy</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fundação Stemmer -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-info">
+                                <h3 class="job-title" data-i18n-key="exp-feesc-title">Analista de Dados Júnior</h3>
+                                <span class="company">Fundação Stemmer (FEESC)</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="date" data-i18n-key="exp-feesc-date">Fev 2023 – Abr 2023</span>
+                                <span class="location">Florianópolis, SC (Remoto)</span>
+                            </div>
+                        </div>
+                        <ul class="job-achievements">
+                            <li data-i18n-key="exp-feesc-1">
+                                <span class="achievement-metric">363</span>
+                                Apoiei na identificação, mapeamento e monitoramento de processos institucionais.
+                            </li>
+                            <li data-i18n-key="exp-feesc-2">
+                                <span class="achievement-metric">20+</span>
+                                Desenvolvi KPIs estratégicos para a área de Educação a Distância (EaD).
+                            </li>
+                            <li data-i18n-key="exp-feesc-3">
+                                Estruturei e automatizei 10 planilhas manuais, reduzindo o tempo de semanas para dias.
+                            </li>
+                        </ul>
+                        <div class="job-tags">
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                            <span>KPI Development</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Informal -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-info">
+                                <h3 class="job-title" data-i18n-key="exp-informal-title">Estrategista de Marketing</h3>
+                                <span class="company">Informal – Design e Arquitetura</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="date" data-i18n-key="exp-informal-date">Ago 2021 – Dez 2023</span>
+                                <span class="location">Fortaleza, CE</span>
+                            </div>
+                        </div>
+                        <ul class="job-achievements">
+                            <li data-i18n-key="exp-informal-1">
+                                Condução de pesquisas de mercado para identificar tendências e necessidades do cliente.
+                            </li>
+                            <li data-i18n-key="exp-informal-2">
+                                Desenvolvimento de estratégias de marketing alinhadas aos objetivos de negócio.
+                            </li>
+                            <li data-i18n-key="exp-informal-3">
+                                Criação de campanhas segmentadas com base em dados e insights de mercado.
+                            </li>
+                        </ul>
+                        <div class="job-tags">
+                            <span>Marketing Strategy</span>
+                            <span>Market Research</span>
+                            <span>Data-Driven Campaigns</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                <span data-i18n-key="education-title">Formação Acadêmica</span>
+                <span class="title-line"></span>
+            </h2>
+            
+            <div class="education-grid">
+                <!-- PhD -->
+                <div class="education-card current">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-badge" data-i18n-key="edu-current">Em andamento</span>
+                        <h3 class="edu-degree" data-i18n-key="edu-phd-degree">Doutorado em Administração</h3>
+                        <p class="edu-focus" data-i18n-key="edu-phd-focus">Marketing Data-Driven & Segmentação de Mercado</p>
+                        <span class="edu-institution">
+                            <i class="fas fa-university"></i>
+                            Universidade Federal de Santa Catarina (UFSC)
+                        </span>
+                        <span class="edu-date">2024 – <span data-i18n-key="edu-present">Atual</span></span>
+                    </div>
+                </div>
+                
+                <!-- Masters -->
+                <div class="education-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-badge capes">CAPES</span>
+                        <h3 class="edu-degree" data-i18n-key="edu-masters-degree">Mestrado em Administração</h3>
+                        <p class="edu-focus" data-i18n-key="edu-masters-focus">Branding, Pesquisa Mista, Web Scraping, Análise Fatorial</p>
+                        <span class="edu-institution">
+                            <i class="fas fa-university"></i>
+                            Universidade Federal de Santa Catarina (UFSC)
+                        </span>
+                        <span class="edu-date">2022 – 2024</span>
+                    </div>
+                </div>
+                
+                <!-- Bachelors -->
+                <div class="education-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-badge research">PIBIC/CNPq</span>
+                        <h3 class="edu-degree" data-i18n-key="edu-bachelors-degree">Graduação em Administração</h3>
+                        <p class="edu-focus" data-i18n-key="edu-bachelors-focus">Comportamento do Consumidor, Power BI, Pesquisa de Mercado</p>
+                        <span class="edu-institution">
+                            <i class="fas fa-university"></i>
+                            Universidade Federal do Cariri (UFCA)
+                        </span>
+                        <span class="edu-date">2018 – 2021</span>
+                    </div>
+                </div>
+                
+                <!-- PET -->
+                <div class="education-card pet">
+                    <div class="edu-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3 class="edu-degree">Programa de Educação Tutorial (PET)</h3>
+                        <ul class="edu-roles">
+                            <li data-i18n-key="edu-pet-1"><strong data-i18n-key="edu-pet-role-1">Diretor de Marketing</strong> (2020)</li>
+                            <li data-i18n-key="edu-pet-2"><strong data-i18n-key="edu-pet-role-2">Diretor de Projetos</strong> (2019)</li>
+                            <li data-i18n-key="edu-pet-3"><span data-i18n-key="edu-pet-leader">Líder</span> - Speak Up & Missões PET</li>
+                        </ul>
+                        <span class="edu-institution">
+                            <i class="fas fa-university"></i>
+                            UFCA
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Xplore Dados -->
+            <div class="xplore-section">
+                <div class="xplore-card">
+                    <div class="xplore-content">
+                        <div class="xplore-badge" data-i18n-key="xplore-badge">Fundador</div>
+                        <h3 class="xplore-title">Xplore Dados</h3>
+                        <p class="xplore-description" data-i18n-key="xplore-description">
+                            Empresa voltada à inteligência de dados e soluções de BI aplicadas ao contexto acadêmico e corporativo.
+                        </p>
+                    </div>
+                    <div class="xplore-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span>
+                <span data-i18n-key="certifications-title">Certificações</span>
+                <span class="title-line"></span>
+            </h2>
+            
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h4 class="cert-name">Python Data Analytics</h4>
+                        <span class="cert-issuer">DIO</span>
+                        <span class="cert-hours">68 <span data-i18n-key="cert-hours">horas</span></span>
+                        <span class="cert-year">2024</span>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h4 class="cert-name">Supervised Machine Learning</h4>
+                        <span class="cert-issuer">Coursera</span>
+                        <span class="cert-hours">33 <span data-i18n-key="cert-hours">horas</span></span>
+                        <span class="cert-year">2024</span>
+                    </div>
+                </div>
+                
+                <div class="cert-card featured">
+                    <div class="cert-logo">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h4 class="cert-name">Google Data Analytics</h4>
+                        <span class="cert-issuer">Coursera</span>
+                        <span class="cert-hours">240 <span data-i18n-key="cert-hours">horas</span></span>
+                        <span class="cert-year">2023</span>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h4 class="cert-name" data-i18n-key="cert-python-adv">Python Básico ao Avançado</h4>
+                        <span class="cert-issuer">Udemy</span>
+                        <span class="cert-hours">63.5 <span data-i18n-key="cert-hours">horas</span></span>
+                        <span class="cert-year">2023</span>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h4 class="cert-name" data-i18n-key="cert-excel">Excel Especialista</h4>
+                        <span class="cert-issuer">Udemy</span>
+                        <span class="cert-hours">42 <span data-i18n-key="cert-hours">horas</span></span>
+                        <span class="cert-year">2022</span>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h4 class="cert-name">Microsoft Power BI</h4>
+                        <span class="cert-issuer">Udemy</span>
+                        <span class="cert-hours">24 <span data-i18n-key="cert-hours">horas</span></span>
+                        <span class="cert-year">2020</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">06.</span>
+                <span data-i18n-key="contact-title">Entre em Contato</span>
+                <span class="title-line"></span>
+            </h2>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3 data-i18n-key="contact-subtitle">Vamos trabalhar juntos?</h3>
+                    <p data-i18n-key="contact-text">
+                        Estou sempre aberto a novas oportunidades, projetos interessantes e parcerias. 
+                        Se você tem uma ideia ou desafio em dados, vamos conversar!
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:patrickwbarbosa@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>patrickwbarbosa@gmail.com</span>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5548992115623" target="_blank" class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+55 (48) 99211-5623</span>
+                        </a>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Florianópolis, SC - Brasil</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://github.com/lessapwb" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lessapwb/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name" data-i18n-key="form-name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="form-highlight"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="form-highlight"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n-key="form-message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="form-highlight"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span data-i18n-key="form-submit">Enviar Mensagem</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">PL</span>
+                    <span class="logo-dot"></span>
+                </div>
+                <p class="footer-text">
+                    <span data-i18n-key="footer-designed">Desenvolvido com</span>
+                    <i class="fas fa-heart"></i>
+                    <span data-i18n-key="footer-by">por Patrick Lessa</span>
+                </p>
+                <p class="footer-copyright">
+                    © 2026 Patrick Lessa. <span data-i18n-key="footer-rights">Todos os direitos reservados.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
