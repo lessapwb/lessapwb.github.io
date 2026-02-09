@@ -1292,6 +1292,12 @@ body {
     margin-top: 60px;
 }
 
+a.xplore-card {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 .xplore-card {
     background: linear-gradient(135deg, var(--bg-card) 0%, rgba(0, 174, 239, 0.1) 100%);
     border: 2px solid var(--accent-cyan);
@@ -1302,6 +1308,12 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.xplore-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 174, 239, 0.2);
 }
 
 .xplore-card::before {

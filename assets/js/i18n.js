@@ -84,18 +84,13 @@ class I18n {
             const translation = this.getTranslation(key);
             
             if (translation) {
-                // Check if element has child elements that should be preserved
-                if (element.children.length > 0 && !element.querySelector('[data-i18n-key]')) {
-                    // Has non-translatable children, set innerHTML carefully
-                    const tempDiv = document.createElement('div');
-                    tempDiv.innerHTML = translation;
-                    element.childNodes.forEach(node => {
-                        if (node.nodeType === Node.TEXT_NODE) {
-                            node.textContent = '';
-                        }
-                    });
-                    element.insertBefore(document.createTextNode(translation), element.firstChild);
-                } else if (element.children.length === 0) {
+                // Check if translation contains HTML tags
+                const hasHtml = /<[^>]+>/.test(translation);
+                
+                // Use innerHTML if translation contains HTML, otherwise use textContent
+                if (hasHtml) {
+                    element.innerHTML = translation;
+                } else {
                     element.textContent = translation;
                 }
             }
