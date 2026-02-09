@@ -1292,10 +1292,17 @@ body {
     margin-top: 60px;
 }
 
-a.xplore-card {
-    text-decoration: none;
+a.xplore-card,
+a.xplore-card:hover,
+a.xplore-card:focus,
+a.xplore-card:visited {
+    text-decoration: none !important;
     color: inherit;
     cursor: pointer;
+}
+
+a.xplore-card * {
+    text-decoration: none !important;
 }
 
 .xplore-card {
