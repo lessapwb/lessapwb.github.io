@@ -16,7 +16,7 @@
     <title>Patrick Lessa | Senior Data Analyst</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔵</text></svg>">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -823,7 +823,7 @@
                     </div>
                 </div>
                 
-                <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <label for="name" data-i18n-key="form-name">Nome</label>
                         <input type="text" id="name" name="name" required>
@@ -876,5 +876,39 @@
     <!-- Scripts -->
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/app.js"></script>
+    
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("epoSTGMI14y_tDgJs");
+        })();
+
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            
+            const submitBtn = this.querySelector('.btn-submit');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            submitBtn.disabled = true;
+
+            emailjs.sendForm("service_2flrzg6", "template_939numm", this)
+                .then(function () {
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Enviado!';
+                    submitBtn.style.background = '#00ffaf';
+                    document.getElementById("contactForm").reset();
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.style.background = '';
+                        submitBtn.disabled = false;
+                    }, 3000);
+                })
+                .catch(function (error) {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    alert("Erro ao enviar: " + error.text);
+                });
+        });
+    </script>
 </body>
 </html>
