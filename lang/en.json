@@ -1,41 +1,42 @@
 {
-    "page-title": "Patrick Lessa | Senior Data Analyst",
-    "meta-description": "Patrick Lessa - Senior Data Analyst specialized in Power BI, Python, and SQL. Over 5 years transforming data into strategic decisions.",
-    
+    "page-title": "Patrick Lessa | Data Scientist & Full Stack Developer",
+    "meta-description": "Patrick Lessa - Data Scientist & Full Stack Developer. 8+ years turning data into decisions, production pipelines, and AI solutions — end to end.",
+
     "nav-home": "Home",
     "nav-about": "About",
     "nav-skills": "Skills",
     "nav-experience": "Experience",
     "nav-education": "Education",
-    "nav-certifications": "Certifications",
+    "nav-projects": "Projects",
     "nav-contact": "Contact",
-    
+
     "hero-add-photo": "Add Photo",
     "hero-greeting": "Hello, I'm",
-    "hero-description": "Over 5 years transforming raw data into C-level decisions for businesses and governments. Specialist in Power BI, Python, and SQL.",
+    "hero-description": "From data and AI modeling to product in production — 8+ years solving problems end to end with Python, SQL, LLMs, and React.",
     "stat-years": "Years of Experience",
     "stat-dashboards": "Dashboards Delivered",
+    "stat-sources": "Data Sources Integrated",
     "stat-efficiency": "Efficiency Gain",
     "hero-cta-contact": "Get in Touch",
-    "hero-cta-more": "Learn More",
+    "hero-cta-cv": "Download CV",
     "hero-scroll": "Scroll to explore",
-    
+
     "about-title": "About Me",
-    "about-p1": "I'm a <strong>Senior Data Analyst</strong> passionate about transforming complex data into actionable insights. With over 5 years of experience, I've been helping companies and government agencies make strategic data-driven decisions.",
-    "about-p2": "Currently, I'm completing my <strong>PhD in Business Administration</strong> at UFSC, focusing on Data-Driven Marketing and market segmentation. I'm also the founder of <strong>Xplore Dados</strong>, a company dedicated to data intelligence and BI solutions.",
-    "about-p3": "My key achievements include an 85% reduction in data preparation time, development of over 100 BI dashboards, and creation of solutions that impacted strategic decisions at a global level.",
+    "about-p1": "I'm a <strong>Data Scientist & Full Stack Developer</strong> with over 8 years of experience turning multi-source data into business decisions, production pipelines, executive dashboards, and GenAI solutions for companies and government agencies.",
+    "about-p2": "I work end to end — from problem modeling to delivery — with Python, SQL, Apache Airflow, Docker, Spark, Microsoft Fabric, and Power BI, plus applied experience with <strong>LLMs, RAG, and embeddings</strong>. I build from the backend (Python, Flask, APIs) to the frontend (React).",
+    "about-p3": "I'm pursuing a <strong>PhD in Business Administration</strong> at UFSC and I'm the founder of <strong>Xplore Dados</strong>, where I build a RAG-based research assistant with multi-LLM orchestration. Highlights include an 85% reduction in data preparation time, 100+ BI dashboards, and solutions that supported strategic decisions at a global level.",
     "about-highlight-1": "Time reduction",
     "about-highlight-2": "Data sources",
     "about-highlight-value-3": "Global",
     "about-highlight-3": "Impact",
-    
+
     "skills-title": "Skills & Tools",
-    "skills-bi": "BI & Visualization",
-    "skills-programming": "Programming",
-    "skills-cloud": "Cloud & Automation",
-    "skills-ml": "Statistics & ML",
-    "skill-regression": "Regression",
-    "skill-supervised": "Supervised Models",
+    "skills-data": "Data & Engineering",
+    "skills-ai": "AI & Machine Learning",
+    "skills-fullstack": "Full Stack",
+    "skills-bi": "BI & Power Platform",
+    "skill-llm-orch": "LLM Orchestration",
+    "skill-stat-modeling": "Statistical Modeling",
     "skills-soft-title": "Soft Skills",
     "soft-interpersonal": "Interpersonal Skills",
     "soft-proactive": "Proactivity",
@@ -45,33 +46,34 @@
     "soft-agile": "Agile Methodologies",
     "soft-communication": "Clear Communication",
     "soft-time": "Time Management",
-    
+
     "experience-title": "Professional Experience",
-    "exp-mouts-title": "Senior Power BI Developer",
+    "exp-mouts-title": "Senior Data & Analytics Engineer",
     "exp-mouts-date": "Jul 2024 – Present",
-    "exp-mouts-1": "Automated ingestion of 14 data sources (SharePoint and SQL), reducing manual preparation time from 6 hours to 45 minutes.",
-    "exp-mouts-2": "Created executive dashboards that exposed critical risks in LATAM operations, driving strategic decisions within 30 days.",
-    "exp-mouts-3": "Delivered Power Apps solutions with Power Automate automation, eliminating manual data entry errors.",
-    
+    "exp-mouts-1": "Architect and maintain end-to-end production data pipelines with Apache Airflow and Docker, orchestrating daily ingestion, transformation, and delivery of multi-country market and valuation data.",
+    "exp-mouts-2": "Automated ingestion of 14 SharePoint and SQL sources, reducing monthly data preparation from 6 hours to 45 minutes.",
+    "exp-mouts-3": "Delivered executive risk dashboards for LATAM operations in under 30 days, later scaled to a global rollout — supporting board-level decisions.",
+    "exp-mouts-4": "Modeled analytical layers in Microsoft Fabric (Dataflows Gen2, Lakehouse, Spark notebooks) with star schema and per-country RLS; migrated the backend from SharePoint Lists to Azure SQL.",
+
     "exp-td-title": "Data Analyst and Project Manager",
     "exp-td-date": "Apr 2023 – Jul 2024",
     "exp-td-1": "Led development of intelligence centers for strategic public agencies, including the Ministry of Education.",
-    "exp-td-2": "Delivered over 100 BI dashboards for Stemmer Foundation (FEESC) across multiple institutional areas.",
+    "exp-td-2": "Contributed to delivering over 100 BI dashboards in ~15 months, defining indicators, datasets, and reporting logic that became the source of truth for stakeholders.",
     "exp-td-3": "Strategic data structuring for the Brazilian Space Agency.",
     "exp-td-4": "Created the Sebrae Startups Observatory, focusing on innovation ecosystem analysis.",
-    
+
     "exp-feesc-title": "Junior Data Analyst",
     "exp-feesc-date": "Feb 2023 – Apr 2023",
-    "exp-feesc-1": "Supported identification, mapping, and monitoring of institutional processes.",
-    "exp-feesc-2": "Developed strategic KPIs for the Distance Education (EaD) area.",
+    "exp-feesc-1": "Mapped and instrumented 363 institutional processes in 2 months, exposing operational gaps and creating an analytical baseline.",
+    "exp-feesc-2": "Developed over 20 strategic KPIs for the Distance Education (EaD) area.",
     "exp-feesc-3": "Structured and automated 10 manual spreadsheets, reducing time from weeks to days.",
-    
+
     "exp-informal-title": "Marketing Strategist",
     "exp-informal-date": "Aug 2021 – Dec 2023",
     "exp-informal-1": "Conducted market research to identify trends and customer needs.",
     "exp-informal-2": "Developed marketing strategies aligned with business objectives.",
     "exp-informal-3": "Created segmented campaigns based on data and market insights.",
-    
+
     "education-title": "Education",
     "edu-current": "In progress",
     "edu-present": "Present",
@@ -87,24 +89,15 @@
     "edu-pet-role-1": "Marketing Director",
     "edu-pet-role-2": "Projects Director",
     "edu-pet-leader": "Leader",
-    
-    "xplore-badge": "Founder",
-    "xplore-description": "A company dedicated to data intelligence and BI solutions for academic and corporate contexts.",
-    
-    "certifications-title": "Certifications",
-    "cert-hours": "hours",
-    "cert-python-adv": "Python Basic to Advanced",
-    "cert-excel": "Excel Specialist",
-    
+
+    "projects-title": "Projects",
+    "xplore-badge": "Founder & Developer",
+    "xplore-description": "AI research assistant built on RAG: multi-provider orchestration (OpenAI, Gemini, Claude), hybrid retrieval with pgvector, reranking, and grounded answers with traceable citations. React frontend, Flask + Supabase backend, with latency, cost, and quality observability.",
+
     "contact-title": "Get in Touch",
     "contact-subtitle": "Let's work together?",
     "contact-text": "I'm always open to new opportunities, interesting projects, and partnerships. If you have an idea or data challenge, let's talk!",
-    "form-name": "Name",
-    "form-message": "Message",
-    "form-submit": "Send Message",
-    "form-success": "Sent!",
-    "form-error": "Error",
-    
+
     "footer-designed": "Designed with",
     "footer-by": "by Patrick Lessa",
     "footer-rights": "All rights reserved."

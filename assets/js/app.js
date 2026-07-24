@@ -13,7 +13,6 @@ const scrollTopBtn = document.getElementById('scrollTop');
 const cursorGlow = document.getElementById('cursorGlow');
 const typingText = document.getElementById('typingText');
 const statNumbers = document.querySelectorAll('.stat-number');
-const contactForm = document.getElementById('contactForm');
 
 // ===== Loading Screen =====
 window.addEventListener('load', () => {
@@ -122,18 +121,18 @@ if (cursorGlow && window.innerWidth >= 1024) {
 // ===== Typing Animation =====
 const typingStrings = {
     pt: [
-        'Analista de Dados Sênior',
-        'Especialista em Power BI',
+        'Data Scientist',
+        'Full Stack Developer',
+        'Especialista em IA & RAG',
         'Python Developer',
-        'SQL Expert',
-        'Data-Driven Strategist'
+        'Analytics Engineer'
     ],
     en: [
-        'Senior Data Analyst',
-        'Power BI Specialist',
+        'Data Scientist',
+        'Full Stack Developer',
+        'AI & RAG Specialist',
         'Python Developer',
-        'SQL Expert',
-        'Data-Driven Strategist'
+        'Analytics Engineer'
     ]
 };
 
@@ -194,7 +193,7 @@ function animateCounters() {
 // ===== Reveal on Scroll =====
 function initScrollReveal() {
     const revealElements = document.querySelectorAll(
-        '.timeline-item, .education-card, .cert-card, .skill-category, .highlight-item, .xplore-card'
+        '.timeline-item, .education-card, .skill-category, .highlight-item, .xplore-card'
     );
     
     revealElements.forEach(el => {
@@ -230,60 +229,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// ===== Contact Form =====
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const submitBtn = contactForm.querySelector('.btn-submit');
-        const originalText = submitBtn.innerHTML;
-        
-        // Show loading state
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
-        submitBtn.disabled = true;
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        
-        try {
-            // If using Formspree, uncomment and update the action URL
-            // const response = await fetch(contactForm.action, {
-            //     method: 'POST',
-            //     body: formData,
-            //     headers: {
-            //         'Accept': 'application/json'
-            //     }
-            // });
-            
-            // Simulate success for demo
-            await new Promise(resolve => setTimeout(resolve, 1500));
-            
-            // Success state
-            submitBtn.innerHTML = '<i class="fas fa-check"></i> <span data-i18n-key="form-success">Enviado!</span>';
-            submitBtn.style.background = 'var(--accent-neon)';
-            contactForm.reset();
-            
-            // Reset button after 3 seconds
-            setTimeout(() => {
-                submitBtn.innerHTML = originalText;
-                submitBtn.style.background = '';
-                submitBtn.disabled = false;
-            }, 3000);
-            
-        } catch (error) {
-            // Error state
-            submitBtn.innerHTML = '<i class="fas fa-times"></i> <span data-i18n-key="form-error">Erro</span>';
-            submitBtn.style.background = '#ff5f56';
-            
-            setTimeout(() => {
-                submitBtn.innerHTML = originalText;
-                submitBtn.style.background = '';
-                submitBtn.disabled = false;
-            }, 3000);
-        }
-    });
-}
 
 // ===== Skill Hover Effects =====
 const skillItems = document.querySelectorAll('.skill-item');
@@ -391,7 +336,7 @@ console.log(`
  / ____/ /_/ / /_/ /  / / /__/ ,<     / /___/  __(__  |__  ) /_/ / 
 /_/    \\__,_/\\__/_/  /_/\\___/_/|_|   /_____/\\___/____/____/\\__,_/  
 
-%c📊 Senior Data Analyst | Power Platform • Python • SQL
+%c📊 Data Scientist & Full Stack Developer | Python • IA/LLMs • React
 
 %cCurious about the code? Check it out:
 https://github.com/lessapwb/lessapwb.github.io

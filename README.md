@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Patrick Lessa](https://img.shields.io/badge/Senior-Data%20Analyst-00AEEF?style=for-the-badge)
-![Power BI](https://img.shields.io/badge/Power%20BI-Expert-F2C811?style=for-the-badge&logo=powerbi)
+![Patrick Lessa](https://img.shields.io/badge/Data%20Scientist-Full%20Stack%20Developer-00AEEF?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-Developer-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![AI](https://img.shields.io/badge/IA-RAG%20%26%20LLMs-00FFAF?style=for-the-badge)
 ![SQL](https://img.shields.io/badge/SQL-Expert-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 
 **[🌐 View Live Portfolio](https://lessapwb.github.io)**
@@ -15,7 +15,7 @@
 
 ## 📊 About
 
-Professional portfolio website showcasing my experience as a Senior Data Analyst with over 5 years transforming raw data into C-level decisions for businesses and governments.
+Professional portfolio website showcasing my experience as a Data Scientist & Full Stack Developer with over 8 years turning multi-source data into business decisions, production pipelines, and AI solutions — end to end.
 
 ### Features
 
@@ -74,15 +74,9 @@ lessapwb.github.io/
 <img src="assets/images/profile.jpg" alt="Patrick Lessa" class="hero-image">
 ```
 
-### Enable Contact Form
+### Update the CV
 
-1. Create a free account at [Formspree](https://formspree.io/)
-2. Get your form ID
-3. Update the form action in `index.html`:
-
-```html
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-```
+Replace `assets/cv/Patrick_Lessa_CV.pdf` with the latest résumé — the hero "Download CV" button points to it.
 
 ### Deploy
 
@@ -90,13 +84,13 @@ The site is automatically deployed via GitHub Pages at `https://lessapwb.github.
 
 ## 📱 Sections
 
-1. **Hero** - Introduction with animated stats
+1. **Hero** - Introduction with animated stats and CV download
 2. **About** - Professional summary with code snippet
 3. **Skills** - Technical and soft skills grid
 4. **Experience** - Timeline of professional history
 5. **Education** - Academic background
-6. **Certifications** - Professional certifications
-7. **Contact** - Form and social links
+6. **Projects** - Featured project (Xplore Dados · Smartchat)
+7. **Contact** - Contact info and social links
 
 ## 🔧 Customization
 
@@ -130,7 +124,7 @@ Add new keys to both `lang/pt.json` and `lang/en.json`, then use in HTML:
 - **Email:** patrickwbarbosa@gmail.com
 - **LinkedIn:** [lessapwb](https://www.linkedin.com/in/lessapwb/)
 - **GitHub:** [lessapwb](https://github.com/lessapwb)
-- **WhatsApp:** [+55 (48) 99211-5623](https://api.whatsapp.com/send?phone=5548992115623)
+- **Company:** [xploredados.com](https://xploredados.com)
 
 ---
 

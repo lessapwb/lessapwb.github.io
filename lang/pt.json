@@ -1,41 +1,42 @@
 {
-    "page-title": "Patrick Lessa | Analista de Dados Sênior",
-    "meta-description": "Patrick Lessa - Analista de Dados Sênior especializado em Power BI, Python e SQL. Mais de 5 anos transformando dados em decisões estratégicas.",
-    
+    "page-title": "Patrick Lessa | Data Scientist & Full Stack Developer",
+    "meta-description": "Patrick Lessa - Data Scientist & Full Stack Developer. Mais de 8 anos transformando dados em decisões, pipelines de produção e soluções de IA — de ponta a ponta.",
+
     "nav-home": "Início",
     "nav-about": "Sobre",
     "nav-skills": "Habilidades",
     "nav-experience": "Experiência",
     "nav-education": "Formação",
-    "nav-certifications": "Certificações",
+    "nav-projects": "Projetos",
     "nav-contact": "Contato",
-    
+
     "hero-add-photo": "Adicionar Foto",
     "hero-greeting": "Olá, eu sou",
-    "hero-description": "Mais de 5 anos transformando dados brutos em decisões de nível C para empresas e governos. Especialista em Power BI, Python e SQL.",
+    "hero-description": "Da modelagem de dados e IA ao produto em produção — mais de 8 anos resolvendo problemas de ponta a ponta com Python, SQL, LLMs e React.",
     "stat-years": "Anos de Experiência",
     "stat-dashboards": "Dashboards Entregues",
+    "stat-sources": "Fontes de Dados Integradas",
     "stat-efficiency": "Ganho de Eficiência",
     "hero-cta-contact": "Entre em Contato",
-    "hero-cta-more": "Saiba Mais",
+    "hero-cta-cv": "Download CV",
     "hero-scroll": "Role para explorar",
-    
+
     "about-title": "Sobre Mim",
-    "about-p1": "Sou um <strong>Analista de Dados Sênior</strong> apaixonado por transformar dados complexos em insights acionáveis. Com mais de 5 anos de experiência, tenho ajudado empresas e órgãos governamentais a tomar decisões estratégicas baseadas em dados.",
-    "about-p2": "Atualmente, estou concluindo meu <strong>Doutorado em Administração</strong> na UFSC, com ênfase em Marketing Data-Driven e segmentação de mercado. Também sou fundador da <strong>Xplore Dados</strong>, uma empresa voltada à inteligência de dados e soluções de BI.",
-    "about-p3": "Minhas principais conquistas incluem a redução de 85% no tempo de preparação de dados, desenvolvimento de mais de 100 painéis de BI e criação de soluções que impactaram decisões estratégicas em nível global.",
+    "about-p1": "Sou <strong>Data Scientist & Full Stack Developer</strong> com mais de 8 anos de experiência transformando dados multi-fonte em decisões de negócio, pipelines de produção, dashboards executivos e soluções de GenAI para empresas e órgãos governamentais.",
+    "about-p2": "Atuo de ponta a ponta — da modelagem do problema à entrega — com Python, SQL, Apache Airflow, Docker, Spark, Microsoft Fabric e Power BI, além de experiência aplicada com <strong>LLMs, RAG e embeddings</strong>. Construo do backend (Python, Flask, APIs) ao frontend (React).",
+    "about-p3": "Curso <strong>Doutorado em Administração</strong> na UFSC e sou fundador da <strong>Xplore Dados</strong>, onde desenvolvo um assistente de pesquisa baseado em RAG com orquestração de múltiplos LLMs. Entre os resultados: 85% de redução no tempo de preparação de dados, 100+ dashboards de BI e soluções que apoiaram decisões estratégicas em nível global.",
     "about-highlight-1": "Redução de tempo",
     "about-highlight-2": "Fontes de dados",
     "about-highlight-value-3": "Global",
     "about-highlight-3": "Impacto",
-    
+
     "skills-title": "Habilidades & Ferramentas",
-    "skills-bi": "BI & Visualização",
-    "skills-programming": "Programação",
-    "skills-cloud": "Cloud & Automação",
-    "skills-ml": "Estatística & ML",
-    "skill-regression": "Regressão",
-    "skill-supervised": "Modelos Supervisionados",
+    "skills-data": "Dados & Engenharia",
+    "skills-ai": "IA & Machine Learning",
+    "skills-fullstack": "Full Stack",
+    "skills-bi": "BI & Power Platform",
+    "skill-llm-orch": "Orquestração de LLMs",
+    "skill-stat-modeling": "Modelagem Estatística",
     "skills-soft-title": "Soft Skills",
     "soft-interpersonal": "Relação Interpessoal",
     "soft-proactive": "Proatividade",
@@ -45,33 +46,34 @@
     "soft-agile": "Metodologias Ágeis",
     "soft-communication": "Comunicação Clara",
     "soft-time": "Gestão de Tempo",
-    
+
     "experience-title": "Experiência Profissional",
-    "exp-mouts-title": "Desenvolvedor Power BI Sênior",
+    "exp-mouts-title": "Engenheiro de Dados & Analytics Sênior",
     "exp-mouts-date": "Jul 2024 – Atual",
-    "exp-mouts-1": "Automatizei a ingestão de 14 fontes de dados (SharePoint e SQL), reduzindo o tempo de preparação manual de 6 horas para 45 minutos.",
-    "exp-mouts-2": "Criei dashboards executivos que expuseram riscos críticos na operação LATAM, impulsionando decisões estratégicas da diretoria.",
-    "exp-mouts-3": "Entreguei soluções em Power Apps com automação via Power Automate, eliminando erros de entrada manual de dados.",
-    
+    "exp-mouts-1": "Arquiteto e mantenho pipelines de dados de produção end-to-end com Apache Airflow e Docker, orquestrando ingestão, transformação e entrega diária de dados de mercado e valuation multi-país.",
+    "exp-mouts-2": "Automatizei a ingestão de 14 fontes SharePoint e SQL, reduzindo a preparação mensal de dados de 6 horas para 45 minutos.",
+    "exp-mouts-3": "Entreguei dashboards executivos de risco para operações LATAM em menos de 30 dias, depois escalados para rollout global — subsidiaram decisões de nível board.",
+    "exp-mouts-4": "Modelei camadas analíticas no Microsoft Fabric (Dataflows Gen2, Lakehouse, Spark notebooks) com star schema e RLS por país; migrei backend de SharePoint Lists para Azure SQL.",
+
     "exp-td-title": "Analista de Dados e Gestor de Projetos",
     "exp-td-date": "Abr 2023 – Jul 2024",
     "exp-td-1": "Liderança no desenvolvimento de centros de inteligência para órgãos públicos estratégicos, incluindo o Ministério da Educação.",
-    "exp-td-2": "Entrega de mais de 100 painéis de BI para a Fundação Stemmer (FEESC) em múltiplas áreas institucionais.",
+    "exp-td-2": "Contribuí para a entrega de mais de 100 dashboards de BI em ~15 meses, definindo indicadores, datasets e lógica de relatórios que viraram fonte da verdade para os stakeholders.",
     "exp-td-3": "Estruturação estratégica de dados para a Agência Espacial Brasileira.",
     "exp-td-4": "Criação do Observatório Sebrae Startups, com foco em análise de ecossistemas de inovação.",
-    
+
     "exp-feesc-title": "Analista de Dados Júnior",
     "exp-feesc-date": "Fev 2023 – Abr 2023",
-    "exp-feesc-1": "Apoiei na identificação, mapeamento e monitoramento de processos institucionais.",
-    "exp-feesc-2": "Desenvolvi KPIs estratégicos para a área de Educação a Distância (EaD).",
+    "exp-feesc-1": "Mapeei e instrumentei 363 processos institucionais em 2 meses, expondo lacunas operacionais e criando uma base analítica de partida.",
+    "exp-feesc-2": "Desenvolvi mais de 20 KPIs estratégicos para a área de Educação a Distância (EaD).",
     "exp-feesc-3": "Estruturei e automatizei 10 planilhas manuais, reduzindo o tempo de semanas para dias.",
-    
+
     "exp-informal-title": "Estrategista de Marketing",
     "exp-informal-date": "Ago 2021 – Dez 2023",
     "exp-informal-1": "Condução de pesquisas de mercado para identificar tendências e necessidades do cliente.",
     "exp-informal-2": "Desenvolvimento de estratégias de marketing alinhadas aos objetivos de negócio.",
     "exp-informal-3": "Criação de campanhas segmentadas com base em dados e insights de mercado.",
-    
+
     "education-title": "Formação Acadêmica",
     "edu-current": "Em andamento",
     "edu-present": "Atual",
@@ -87,24 +89,15 @@
     "edu-pet-role-1": "Diretor de Marketing",
     "edu-pet-role-2": "Diretor de Projetos",
     "edu-pet-leader": "Líder",
-    
-    "xplore-badge": "Fundador",
-    "xplore-description": "Empresa voltada à inteligência de dados e soluções de BI aplicadas ao contexto acadêmico e corporativo.",
-    
-    "certifications-title": "Certificações",
-    "cert-hours": "horas",
-    "cert-python-adv": "Python Básico ao Avançado",
-    "cert-excel": "Excel Especialista",
-    
+
+    "projects-title": "Projetos",
+    "xplore-badge": "Fundador & Desenvolvedor",
+    "xplore-description": "Assistente de pesquisa com IA baseado em RAG: orquestração multi-provider (OpenAI, Gemini, Claude), retrieval híbrido com pgvector, reranking e respostas fundamentadas por citações rastreáveis. Frontend em React, backend em Flask + Supabase, com observabilidade de latência, custo e qualidade.",
+
     "contact-title": "Entre em Contato",
     "contact-subtitle": "Vamos trabalhar juntos?",
     "contact-text": "Estou sempre aberto a novas oportunidades, projetos interessantes e parcerias. Se você tem uma ideia ou desafio em dados, vamos conversar!",
-    "form-name": "Nome",
-    "form-message": "Mensagem",
-    "form-submit": "Enviar Mensagem",
-    "form-success": "Enviado!",
-    "form-error": "Erro",
-    
+
     "footer-designed": "Desenvolvido com",
     "footer-by": "por Patrick Lessa",
     "footer-rights": "Todos os direitos reservados."
