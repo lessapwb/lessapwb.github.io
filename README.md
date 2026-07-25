@@ -15,7 +15,7 @@
 
 ## 📊 About
 
-Professional portfolio website showcasing my experience as a Data Scientist & Full Stack Developer with over 8 years turning multi-source data into business decisions, production pipelines, and AI solutions — end to end.
+Professional portfolio website showcasing my experience as a Data Scientist & Full Stack Developer with over 8 years turning multi-source data into business decisions, production pipelines, and AI solutions end to end.
 
 ### Features
 
@@ -76,7 +76,7 @@ lessapwb.github.io/
 
 ### Update the CV
 
-Replace `assets/cv/Patrick_Lessa_CV.pdf` with the latest résumé — the hero "Download CV" button points to it.
+Replace `assets/cv/Patrick_Lessa_CV.pdf` with the latest résumé. The hero "Download CV" button points to it.
 
 ### Deploy
 

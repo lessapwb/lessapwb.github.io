@@ -54,8 +54,13 @@ class I18n {
     }
     
     async loadTranslations(lang) {
+        // 'no-cache' revalida com o servidor (barato, responde 304 se nada mudou).
+        // Sem isso, o navegador serve um JSON antigo em cache e chaves novas ficam
+        // sem tradução, caindo no texto padrão do HTML.
+        const fetchOptions = { cache: 'no-cache' };
+
         try {
-            const response = await fetch(`lang/${lang}.json`);
+            const response = await fetch(`lang/${lang}.json`, fetchOptions);
             if (!response.ok) {
                 throw new Error(`Failed to load ${lang}.json`);
             }
@@ -65,7 +70,7 @@ class I18n {
             // Try loading default language if current fails
             if (lang !== this.defaultLang) {
                 try {
-                    const fallbackResponse = await fetch(`lang/${this.defaultLang}.json`);
+                    const fallbackResponse = await fetch(`lang/${this.defaultLang}.json`, fetchOptions);
                     this.translations = await fallbackResponse.json();
                     this.currentLang = this.defaultLang;
                 } catch (fallbackError) {

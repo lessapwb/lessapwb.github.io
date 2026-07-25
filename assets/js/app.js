@@ -142,7 +142,12 @@ let isDeleting = false;
 let typingSpeed = 100;
 
 function typeString() {
-    const currentLang = localStorage.getItem('portfolio-lang') || 'pt';
+    // O localStorage só é gravado quando o usuário troca o idioma manualmente. Num
+    // primeiro acesso com navegador em inglês, o i18n detecta 'en' mas o storage está
+    // vazio — por isso a fonte da verdade é o i18n, com o storage só como reserva.
+    const currentLang = (window.i18n && window.i18n.getCurrentLang())
+        || localStorage.getItem('portfolio-lang')
+        || 'pt';
     const strings = typingStrings[currentLang] || typingStrings.pt;
     const currentString = strings[currentStringIndex];
     
@@ -193,7 +198,7 @@ function animateCounters() {
 // ===== Reveal on Scroll =====
 function initScrollReveal() {
     const revealElements = document.querySelectorAll(
-        '.timeline-item, .education-card, .skill-category, .highlight-item, .xplore-card'
+        '.timeline-item, .education-card, .skill-category, .highlight-item, .project-card, .project-pillar'
     );
     
     revealElements.forEach(el => {
@@ -231,17 +236,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ===== Skill Hover Effects =====
-const skillItems = document.querySelectorAll('.skill-item');
+// Em telas de toque o mouseenter dispara no tap e o brilho fica preso até tocar em outro lugar.
+if (window.matchMedia('(hover: hover)').matches) {
+    const skillItems = document.querySelectorAll('.skill-item');
 
-skillItems.forEach(item => {
-    item.addEventListener('mouseenter', function() {
-        this.style.boxShadow = '0 0 20px rgba(0, 255, 175, 0.3)';
+    skillItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            this.style.boxShadow = '0 0 20px rgba(0, 255, 175, 0.3)';
+        });
+
+        item.addEventListener('mouseleave', function() {
+            this.style.boxShadow = '';
+        });
     });
-    
-    item.addEventListener('mouseleave', function() {
-        this.style.boxShadow = '';
-    });
-});
+}
 
 // ===== Initialize Animations =====
 function initAnimations() {

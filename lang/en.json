@@ -1,6 +1,6 @@
 {
     "page-title": "Patrick Lessa | Data Scientist & Full Stack Developer",
-    "meta-description": "Patrick Lessa - Data Scientist & Full Stack Developer. 8+ years turning data into decisions, production pipelines, and AI solutions — end to end.",
+    "meta-description": "Patrick Lessa - Data Scientist & Full Stack Developer. 8+ years turning data into decisions, production pipelines, and AI solutions end to end.",
 
     "nav-home": "Home",
     "nav-about": "About",
@@ -12,7 +12,7 @@
 
     "hero-add-photo": "Add Photo",
     "hero-greeting": "Hello, I'm",
-    "hero-description": "From data and AI modeling to product in production — 8+ years solving problems end to end with Python, SQL, LLMs, and React.",
+    "hero-description": "From data and AI modeling to product in production. 8+ years solving problems end to end with Python, SQL, LLMs, and React.",
     "stat-years": "Years of Experience",
     "stat-dashboards": "Dashboards Delivered",
     "stat-sources": "Data Sources Integrated",
@@ -23,8 +23,8 @@
 
     "about-title": "About Me",
     "about-p1": "I'm a <strong>Data Scientist & Full Stack Developer</strong> with over 8 years of experience turning multi-source data into business decisions, production pipelines, executive dashboards, and GenAI solutions for companies and government agencies.",
-    "about-p2": "I work end to end — from problem modeling to delivery — with Python, SQL, Apache Airflow, Docker, Spark, Microsoft Fabric, and Power BI, plus applied experience with <strong>LLMs, RAG, and embeddings</strong>. I build from the backend (Python, Flask, APIs) to the frontend (React).",
-    "about-p3": "I'm pursuing a <strong>PhD in Business Administration</strong> at UFSC and I'm the founder of <strong>Xplore Dados</strong>, where I build a RAG-based research assistant with multi-LLM orchestration. Highlights include an 85% reduction in data preparation time, 100+ BI dashboards, and solutions that supported strategic decisions at a global level.",
+    "about-p2": "I work end to end, from problem modeling to delivery, with Python, SQL, Apache Airflow, Docker, Spark, Microsoft Fabric, and Power BI, plus applied experience with <strong>LLMs, RAG, and embeddings</strong>. I build from the backend (Python, Flask, APIs) to the frontend (React).",
+    "about-p3": "I'm pursuing a <strong>PhD in Business Administration</strong> at UFSC and I'm the founder of <strong>Xplore Dados</strong>, an AI SaaS platform for academic research with 19 tools in production that I build and maintain single-handedly. Highlights include an 85% reduction in data preparation time, 100+ BI dashboards, and solutions that supported strategic decisions at a global level.",
     "about-highlight-1": "Time reduction",
     "about-highlight-2": "Data sources",
     "about-highlight-value-3": "Global",
@@ -48,11 +48,12 @@
     "soft-time": "Time Management",
 
     "experience-title": "Professional Experience",
-    "exp-mouts-title": "Senior Data & Analytics Engineer",
+    "loc-floripa-remote": "Florianópolis, SC (Remote)",
+    "exp-mouts-title": "Senior Data & Analytics Scientist",
     "exp-mouts-date": "Jul 2024 – Present",
     "exp-mouts-1": "Architect and maintain end-to-end production data pipelines with Apache Airflow and Docker, orchestrating daily ingestion, transformation, and delivery of multi-country market and valuation data.",
     "exp-mouts-2": "Automated ingestion of 14 SharePoint and SQL sources, reducing monthly data preparation from 6 hours to 45 minutes.",
-    "exp-mouts-3": "Delivered executive risk dashboards for LATAM operations in under 30 days, later scaled to a global rollout — supporting board-level decisions.",
+    "exp-mouts-3": "Delivered executive risk dashboards for LATAM operations in under 30 days, later scaled to a global rollout, supporting board-level decisions.",
     "exp-mouts-4": "Modeled analytical layers in Microsoft Fabric (Dataflows Gen2, Lakehouse, Spark notebooks) with star schema and per-country RLS; migrated the backend from SharePoint Lists to Azure SQL.",
 
     "exp-td-title": "Data Analyst and Project Manager",
@@ -69,6 +70,7 @@
     "exp-feesc-3": "Structured and automated 10 manual spreadsheets, reducing time from weeks to days.",
 
     "exp-informal-title": "Marketing Strategist",
+    "exp-informal-company": "Informal – Design and Architecture",
     "exp-informal-date": "Aug 2021 – Dec 2023",
     "exp-informal-1": "Conducted market research to identify trends and customer needs.",
     "exp-informal-2": "Developed marketing strategies aligned with business objectives.",
@@ -83,6 +85,7 @@
     "edu-masters-focus": "Branding, Mixed Methods Research, Web Scraping, Factor Analysis",
     "edu-bachelors-degree": "Bachelor's in Business Administration",
     "edu-bachelors-focus": "Consumer Behavior, Power BI, Market Research",
+    "edu-pet-degree": "Tutorial Education Program (PET)",
     "edu-pet-1": "Marketing Director (2020)",
     "edu-pet-2": "Projects Director (2019)",
     "edu-pet-3": "Leader - Speak Up & PET Missions",
@@ -91,14 +94,32 @@
     "edu-pet-leader": "Leader",
 
     "projects-title": "Projects",
-    "xplore-badge": "Founder & Developer",
-    "xplore-description": "AI research assistant built on RAG: multi-provider orchestration (OpenAI, Gemini, Claude), hybrid retrieval with pgvector, reranking, and grounded answers with traceable citations. React frontend, Flask + Supabase backend, with latency, cost, and quality observability.",
+    "project-badge": "Founder & Developer",
+    "project-tagline": "AI SaaS platform for academic research",
+    "project-summary": "An AI SaaS platform for academic research that I design, build, and maintain single-handedly: 19 tools in production, a Flask backend, PostgreSQL on Supabase, and an AI layer that orchestrates OpenAI, Anthropic, and Google under one streaming protocol.",
+    "project-metric-tools": "tools in production",
+    "project-metric-loc": "lines of Python",
+    "project-metric-tests": "automated tests",
+    "project-metric-llm": "LLM providers",
+    "project-pillar-1-title": "RAG with verifiable citations",
+    "project-pillar-1-text": "Hybrid retrieval that blends keyword search with semantic similarity, boosted by academic section and guarded against redundancy. A four-stage pipeline validates, deduplicates, and anchors every citation to the exact passage in the source PDF.",
+    "project-pillar-2-title": "Multi-provider LLM orchestration",
+    "project-pillar-2-text": "OpenAI, Anthropic, and Google normalized into a single streaming protocol, with fallback chains, mid-response retries, and credits charged only after a generation completes successfully.",
+    "project-pillar-3-title": "Vector search with pgvector",
+    "project-pillar-3-text": "An HNSW index over cosine similarity and diversified retrieval solved in SQL, guaranteeing minimum coverage per document so no single file dominates the context sent to the model.",
+    "project-pillar-4-title": "Computational bibliometrics",
+    "project-pillar-4-text": "A custom HySCo-KC method fusing co-occurrence networks, semantic similarity, and topic modeling with configurable weights, alongside Bradford, Lotka, and Zipf laws and thematic evolution analysis.",
+    "project-pillar-5-title": "Complete SaaS platform",
+    "project-pillar-5-text": "Stripe subscriptions with idempotent webhooks, atomic credit debits inside Postgres itself, Brazilian e-invoicing, a partner program with a public API, and a bilingual interface.",
+    "project-pillar-6-title": "Security and operations",
+    "project-pillar-6-text": "Per-request CSP nonces, an application firewall with progressive banning, 168 row-level security policies, structured logs with PII masking, and CI that validates the reversibility of every migration.",
 
     "contact-title": "Get in Touch",
-    "contact-subtitle": "Let's work together?",
+    "contact-subtitle": "Let's work together",
     "contact-text": "I'm always open to new opportunities, interesting projects, and partnerships. If you have an idea or data challenge, let's talk!",
+    "contact-location": "Florianópolis, SC - Brazil",
 
-    "footer-designed": "Designed with",
+    "footer-designed": "Built with",
     "footer-by": "by Patrick Lessa",
     "footer-rights": "All rights reserved."
 }
