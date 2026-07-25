@@ -121,11 +121,11 @@ if (cursorGlow && window.innerWidth >= 1024) {
 // ===== Typing Animation =====
 const typingStrings = {
     pt: [
-        'Data Scientist',
-        'Full Stack Developer',
+        'Cientista de Dados',
+        'Desenvolvedor Full Stack',
         'Especialista em IA & RAG',
-        'Python Developer',
-        'Analytics Engineer'
+        'Desenvolvedor Python',
+        'Engenheiro de Analytics'
     ],
     en: [
         'Data Scientist',
